@@ -29,7 +29,7 @@ elif nargs == 3:
                     nrents += int(heal["nr_entries"])
                 print(nrents)
             else:
-                print(volume[sys.argv[1]])
+                print(json.dumps(volume[sys.argv[1]]))
             break
     else:
         if sys.argv[1] == "health":
